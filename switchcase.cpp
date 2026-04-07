@@ -2,8 +2,8 @@
 using namespace std;
 
 int KodeJurusan;
-string Jurusan;
 string NamaJurusan;
+string StatusKuota;
 
 // prosedur input
 void input(){
@@ -18,22 +18,30 @@ void input(){
 
 //prosedur untuk pengecekan kondisi
 
-void pilihan(){
+void pilihanJurusan(){
     switch (KodeJurusan) {
         case 1:
             NamaJurusan = "Teknologi Informasi";
-            statuskuota = "Tersedia (15 kursi)";
+            StatusKuota = "Tersedia (15 kursi)";
             break;
         case 2:
             NamaJurusan = "Teknik Elektro";
-            statuskuota = "kuota penuh";
+            StatusKuota = "kuota penuh";
             break;
         case 3:
             NamaJurusan = "Sistem Informasi";
-            statuskuota = "Tersedia (5 kursi)";
+            StatusKuota = "Tersedia (5 kursi)";
             break;
         default:
             NamaJurusan = "Tidak diketahui";
-            statuskuota = "Error: kode tidak valid";
+            StatusKuota = "Error: kode tidak valid";
     }
+}
+
+// prosedur output
+void output(){
+    cout << "\n=== HASIL PENDAFTARAN JURUSAN KAMPUS UMY ===" << endl;
+    cout << "Jurusan pilihan: " << NamaJurusan << endl;
+    cout << "Status Kuota: " << StatusKuota << endl;
+    cout << "--------------------------------------------" << endl;
 }
