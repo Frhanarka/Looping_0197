@@ -19,3 +19,6 @@ int main() {
     else
         status = "TIDAK LULUS";
 }
+    cout << "status kelulusan = " << status << ", 
+    dengan nilai rata-rata = " << rerata << endl;
+}
