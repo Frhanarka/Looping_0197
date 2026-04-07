@@ -45,3 +45,10 @@ void output(){
     cout << "Status Kuota: " << StatusKuota << endl;
     cout << "--------------------------------------------" << endl;
 }
+
+int main() {
+    input();
+    pilihanJurusan();
+    output();
+    return 0;
+}
