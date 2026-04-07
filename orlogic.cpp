@@ -13,7 +13,7 @@ int main()
 
     rerata = (nilM + nilB) / 2;
 
-    if (! (rerata < 60 )) //not logic start with sign !
+    if (! (rerata < 60 ) || (nilM >=70))  //not logic start with sign !
         status = "LULUS";
     else
         status = "TIDAK LULUS";
