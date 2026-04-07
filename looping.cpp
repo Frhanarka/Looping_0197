@@ -23,3 +23,14 @@ int main() {
         cout << "Bilangan acak= " <<x << endl;
         x = rand() % 10;
     }
+
+    //perulangan do while
+    cout <<"Perulangan DO WHILE" << endl;
+    x = 1 + rand() % 10;
+    do{
+        cout << "Bilangan acak= " <<x << endl;
+        x = rand() % 10;
+    }while(x <= 5);
+
+    cout<< "Bilangan acak do-while yyang terakhir= " <<x << endl;
+    cout<<endl;
